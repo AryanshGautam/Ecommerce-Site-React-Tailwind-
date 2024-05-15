@@ -1,0 +1,13 @@
+.Cartcontainer {
+    margin-bottom: 100px; /* 10% of the viewport height */
+    overflow: scroll;
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+  
+  /* Additional CSS for responsiveness */
+  @media (max-width: 768px) {
+    .Cartcontainer {
+      margin-bottom: 20px; /* Adjust as needed for smaller screens */
+    }
+  }

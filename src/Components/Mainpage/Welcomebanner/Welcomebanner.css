@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Aligns items with space between them */
+    align-items: center; /* Vertically centers items */
+    flex-wrap: wrap; /* Allows items to wrap to the next line when there's not enough space */
+    margin-top: 5%;
+    margin-left: 2%;
+  }
+  
+  .textcontainer {
+    flex-basis: 50%; /* Specifies the initial size of the text container */
+    margin-left: 2%;
+  }
+
+  .textcontainer h1{
+    width: 90%;
+  }
+
+  .textcontainer p{
+    width: 100%;
+  }
+  
+  .right {
+    display: flex;
+    flex-basis: 45%; /* Specifies the initial size of the image container */
+  }
+  
+  .right img{
+    width: 23%;
+    border-radius: 7px;
+    margin-left: 1%;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Stacks items vertically on smaller screens */
+    }
+  
+    .textcontainer, .right {
+      flex-basis: 100%; /* Text container and image container take up full width on smaller screens */
+    }
+
+    .textcontainer p{
+        width: 98%;
+    }
+  }
+  
